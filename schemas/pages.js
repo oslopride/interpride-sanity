@@ -14,28 +14,22 @@ export default {
       type: "array",
       of: [
         {
-          title: "Text Area",
-          name: "textArea",
-          type: "object",
-          fields: [
-            {
-              title: "Text",
-              name: "text",
-              type: "richText"
-            }
-          ],
-          preview: {
-            select: {},
-            prepare: () => ({
-              title: "Tex Area"
-            })
-          }
+          type: "textArea"
         },
         {
           type: "banner"
         },
         {
           type: "hero"
+        },
+        {
+          type: "image",
+          options: {
+            hotspot: true
+          }
+        },
+        {
+          type: "split"
         }
       ]
     }

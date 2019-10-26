@@ -11,6 +11,9 @@ import page from "./pages";
 import richText from "./types/richText";
 import banner from "./types/banner";
 import hero from "./types/hero";
+import textArea from "./types/textArea";
+import image from "./types/image";
+import split from "./types/split";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -22,6 +25,9 @@ export default createSchema({
     page,
     richText,
     banner,
-    hero
+    hero,
+    textArea,
+    image,
+    split
   ])
 })
