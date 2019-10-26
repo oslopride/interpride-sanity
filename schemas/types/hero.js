@@ -17,12 +17,12 @@ export default {
       title: "Promotions",
       name: "promotions",
       type: "array",
+      validation: Rule => [ Rule.min(2), Rule.max(3) ],
       of: [
         {
           title: "Promotion",
           name: "promotion",
           type: "object",
-          validation: Rule => [ Rule.max(3), Rule.min(2) ],
           fields: [
             {
               title: "Heading",
