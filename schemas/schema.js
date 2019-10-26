@@ -6,6 +6,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // Documents
 import page from "./pages";
+import configuration from "./configuration";
 
 // Types
 import richText from "./types/richText";
@@ -23,6 +24,7 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     page,
+    configuration,
     richText,
     banner,
     hero,
