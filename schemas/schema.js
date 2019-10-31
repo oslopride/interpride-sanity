@@ -5,13 +5,15 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // Documents
-import page from "./pages";
+import page from "./page";
 import configuration from "./configuration";
 
 // Types
 import richText from "./types/richText";
 import banner from "./types/banner";
 import hero from "./types/hero";
+import promotion from "./types/hero/promotion";
+import keyValuePair from "./types/keyValuePair";
 import textArea from "./types/textArea";
 import image from "./types/image";
 import split from "./types/split";
@@ -28,8 +30,10 @@ export default createSchema({
     richText,
     banner,
     hero,
+    promotion,
+    keyValuePair,
     textArea,
     image,
     split
   ])
-})
+});

@@ -12,20 +12,7 @@ export default {
           type: "textArea"
         },
         {
-          type: "image",
-          options: {
-            hotspot: true
-          },
-          fields: [
-            {
-              title: "Caption",
-              name: "caption",
-              type: "string",
-              options: {
-                isHighlighted: true
-              }
-            }
-          ]
+          type: "webImage"
         }
       ]
     }
@@ -36,7 +23,7 @@ export default {
     },
     prepare: ({ elements }) => ({
       title: `Split (${elements.length})`,
-      media: elements.find(e => e._type === "image")
+      media: elements.find(e => e._type === "webImage")
     })
   }
 }
