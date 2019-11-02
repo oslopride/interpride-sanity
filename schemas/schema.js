@@ -12,7 +12,7 @@ import configuration from "./configuration";
 import richText from "./types/richText";
 import banner from "./types/banner";
 import hero from "./types/hero";
-import promotion from "./types/hero/promotion";
+import heroPromotion from "./types/hero/heroPromotion";
 import keyValuePair from "./types/keyValuePair";
 import textArea from "./types/textArea";
 import image from "./types/image";
@@ -30,7 +30,7 @@ export default createSchema({
     richText,
     banner,
     hero,
-    promotion,
+    heroPromotion,
     keyValuePair,
     textArea,
     image,

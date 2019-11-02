@@ -20,9 +20,7 @@ export default {
       validation: Rule => [ Rule.min(2), Rule.max(3) ],
       of: [
         {
-          title: "Promotion",
-          name: "promotion",
-          type: "promotion"
+          type: "heroPromotion"
         }
       ]
     }

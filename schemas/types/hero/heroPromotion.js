@@ -1,6 +1,6 @@
 export default {
   title: "Promotion",
-  name: "promotion",
+  name: "heroPromotion",
   type: "object",
   fields: [
     {
@@ -25,5 +25,14 @@ export default {
         }
       ]
     }
-  ]
+  ],
+  preview: {
+    select: {
+      subtitle: "heading"
+    },
+    prepare: ({ subtitle }) => ({
+      title: "Promotion",
+      subtitle
+    })
+  }
 }
