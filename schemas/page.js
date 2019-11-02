@@ -9,7 +9,7 @@ export default {
       type: "string"
     },
     {
-      title: "Slug",
+      title: "URL",
       name: "slug",
       type: "slug",
       options: {
