@@ -32,8 +32,7 @@ export default {
       title: 'caption',
     },
     component: ({value}) => {
-      console.log(value);
-      return <img src={value.imageUrl} style={{ width: "100%", maxHeight: "400px", objectFit: "cover" }} />;
+      return <img src={(value || {}).imageUrl} style={{ width: "100%", maxHeight: "400px", objectFit: "cover" }} />;
     }
   }
 };
