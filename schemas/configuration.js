@@ -4,6 +4,17 @@ export default {
   type: "document",
   fields: [
     {
+      title: "Navigation Bar",
+      name: "navbar",
+      type: "array",
+      of: [
+        {
+          type: "reference",
+          to: [{ type: "page" }]
+        }
+      ]
+    },
+    {
       title: "Advanced",
       name: "advanced",
       type: "array",
