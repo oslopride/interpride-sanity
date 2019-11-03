@@ -16,8 +16,8 @@ import hero from "./types/hero";
 import heroPromotion from "./types/hero/heroPromotion";
 import keyValuePair from "./types/keyValuePair";
 import textArea from "./types/textArea";
-import image from "./types/image";
 import split from "./types/split";
+import figure from "./types/figure";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -35,7 +35,7 @@ export default createSchema({
     heroPromotion,
     keyValuePair,
     textArea,
-    image,
-    split
+    split,
+    figure
   ])
 });

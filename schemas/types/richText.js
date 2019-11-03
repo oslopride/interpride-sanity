@@ -4,7 +4,8 @@ export default {
   type: "array",
   of: [
     {
-      type: "block"
-    }
+      type: "block",
+    },
+    { type: 'figure' }
   ]
 }

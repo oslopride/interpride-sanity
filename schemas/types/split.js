@@ -12,7 +12,7 @@ export default {
           type: "textArea"
         },
         {
-          type: "webImage"
+          type: "figure"
         }
       ]
     }
