@@ -18,6 +18,7 @@ import keyValuePair from "./types/keyValuePair";
 import textArea from "./types/textArea";
 import split from "./types/split";
 import figure from "./types/figure";
+import youtube from "./types/youtube";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -36,6 +37,7 @@ export default createSchema({
     keyValuePair,
     textArea,
     split,
-    figure
+    figure,
+    youtube
   ])
 });
