@@ -10,7 +10,8 @@ import frontPage from "./frontPage";
 import configuration from "./configuration";
 
 // Types
-import localeLayout from "./types/localeLayout"
+import localeLayout from "./types/localeLayout";
+import localeString from "./types/localeString";
 import richText from "./types/richText";
 import banner from "./types/banner";
 import hero from "./types/hero";
@@ -32,6 +33,7 @@ export default createSchema({
     frontPage,
     configuration,
     localeLayout,
+    localeString,
     richText,
     banner,
     hero,

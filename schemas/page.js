@@ -1,3 +1,5 @@
+import supportedLanguages from "../supportedLanguages";
+
 export default {
   title: "Page",
   name: "page",
@@ -6,7 +8,7 @@ export default {
     {
       title: "Title",
       name: "title",
-      type: "string"
+      type: "localeString"
     },
     {
       title: "URL",
@@ -21,5 +23,17 @@ export default {
       name: "layout",
       type: "localeLayout"
     }
-  ]
+  ],
+  preview: {
+    select: {
+      title: "title"
+    },
+    prepare: ({ title }) => ({
+      title: title.en,
+      subtitle: supportedLanguages
+        .filter(lang => !lang.isDefault)
+        .map(lang => `${lang.id.toUpperCase()}: ${title[lang.id]}`)
+        .join(", ")
+    })
+  }
 }
