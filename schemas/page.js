@@ -19,27 +19,7 @@ export default {
     {
       title: "Layout",
       name: "layout",
-      type: "array",
-      of: [
-        {
-          type: "textArea"
-        },
-        {
-          type: "banner"
-        },
-        {
-          type: "hero"
-        },
-        {
-          type: "image",
-          options: {
-            hotspot: true
-          }
-        },
-        {
-          type: "split"
-        }
-      ]
+      type: "localeLayout"
     }
   ]
 }
