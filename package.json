@@ -19,7 +19,7 @@
     "@sanity/core": "^0.144.0",
     "@sanity/default-layout": "^0.144.2",
     "@sanity/default-login": "^0.144.0",
-    "@sanity/desk-tool": "^0.144.2",
+    "@sanity/desk-tool": "^0.144.3",
     "get-youtube-id": "^1.0.1",
     "prop-types": "^15.6",
     "react": "^16.2",
